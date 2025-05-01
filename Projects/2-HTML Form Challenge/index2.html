@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar (CSS Only)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 10px 20px;
+            color: white;
+        }
+        .nav-links {
+            display: flex;
+            gap: 15px;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 12px;
+        }
+        .menu-btn {
+            display: none;
+            font-size: 24px;
+            background: none;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+        /* Popover Menu */
+        .popover {
+            display: none;
+            position: absolute;
+            top: 60px;
+            right: 10px;
+            background: white;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            overflow: hidden;
+            width: 150px;
+        }
+        .popover a {
+            display: block;
+            padding: 10px 20px;
+            color: black;
+            text-decoration: none;
+            border-bottom: 1px solid #ddd;
+        }
+        .popover a:last-child {
+            border-bottom: none;
+        }
+        .popover a:hover {
+            background: #f0f0f0;
+        }
+
+        /* Checkbox Trick */
+        #menu-toggle {
+            display: none;
+        }
+        #menu-toggle:checked + .popover {
+            display: block;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            .menu-btn {
+                display: block;
+            }
+            
+        }
+
+        @media (min-width: 768px) {
+            #menu-toggle {
+                display: 	none;
+            }
+
+            #menu-toggle:checked + .popover {
+                display: none;
+            }
+
+            .summary {
+                color: green;
+            }
+            .dt {
+                color: aqua;
+            }
+
+            
+            
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">MySite</div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+        
+        <!-- Checkbox for toggling -->
+        <label for="menu-toggle" class="menu-btn">☰</label>
+        <input type="checkbox" id="menu-toggle">
+        <div class="popover">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+
+
+
+    <main>
+        <section>
+            <details class="dt">
+                <summary class="summary">How can i ask the question?</summary>
+                you're an amazing person!
+            </details>
+        </section>
+    </main>
+
+</body>
+</html>
