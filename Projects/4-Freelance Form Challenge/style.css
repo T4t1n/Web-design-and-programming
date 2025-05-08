@@ -1,0 +1,41 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f1f1f1;
+}
+
+.container {
+    background-color: rgb(20, 28, 66);
+    color: #f2f2f2;
+    margin: 100px auto;
+    padding: 50px;
+    width: 386px;
+    border-radius: 5px;
+}
+
+.text {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.input  {
+    display: block;
+    padding: 10px;
+    margin: 5px auto;
+
+}
+
+.button {
+    display: block;
+    padding: 10px 52px;
+    margin: 10px auto;
+    background-color: coral;
+    color: #f2f2f2;
+    font-weight: bold;
+}

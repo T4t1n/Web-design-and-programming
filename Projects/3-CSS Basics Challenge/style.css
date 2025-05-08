@@ -28,7 +28,7 @@ a:active {
     color: red;
 }
 
-.main-menu {
+.main-menu { /* nav ul.main-menu is more specific*/
     list-style: none;
     padding: 0;
     background-color: #f4f4f4;
@@ -46,9 +46,16 @@ a:active {
 
 
 
+/*ul {
+    list-style: none;
+    padding: 0;
+}*/
 
-
-
+/* ul.main-menu {
+    background-color: #f4f4f4;
+    text-indent: 10px;
+    text-transform: uppercase;
+} */
 
 
 
