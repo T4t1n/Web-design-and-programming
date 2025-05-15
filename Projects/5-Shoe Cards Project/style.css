@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: rgb(161, 195, 194);
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    
+}
+
+.container div {
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
+    margin-bottom: 15px;
+    padding: 24px;
+    background-size: 39%;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+   
+}
+
+.container__card--sporty {
+    background-image: url("/images/sporty.png");
+}
+
+.container__card--casual {
+    background-image: url("/images/casual.png");
+}
+
+.container__card--formal {
+    background-image: url("/images/formal.png");
+}
+
+p {
+    margin: 25px 0;
+    margin-bottom: 30px;
+}
+
+.card__titulo--sporty {
+    color: rgb(227, 52, 52);
+}
+
+.container a {
+    text-decoration: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+}
+
+.card__enlace--sporty {
+    background: rgb(227, 52, 52);
+}
+
+.card__titulo--casual {
+    color: rgb(0, 0, 255);
+}
+
+.card__enlace--casual {
+    background: rgb(0, 0, 255);
+}
+
+.card__titulo--formal {
+    color: rgb(63, 35, 7);
+}
+
+.card__enlace--formal {
+    background: rgb(63, 35, 7);
+}
+
+
+.container a:hover {
+    opacity: .7;
+}
+
