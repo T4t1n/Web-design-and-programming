@@ -1,0 +1,22 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+hr {
+    width: 50%;
+}
+
+.seccion{
+    width: 550px;
+    border: 1px solid;
+}
+
+.info--title__green {
+    color: rgb(99, 228, 99);
+    font-weight: bolder;
+    
+}
