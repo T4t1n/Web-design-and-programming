@@ -5,10 +5,26 @@
     font-family: "Monserrat", sans-serif;
 }
 
+body {
+    background-color: #27264a;
+
+}
+
+.container {
+    max-width: 600px;
+    margin: 200px auto;
+    padding: 40px;
+    background-color: #577db8;
+    border-radius: 9px;
+}
+
 .card  {
-    background-color: green;
+    
+    background-color: #ffffff;
     text-align: center;
-    width: 400px;
+    padding: 5px;
+    margin: 10px;
+    
 }
 .title  {
     background-color: aquamarine;
@@ -17,5 +33,13 @@
 
 p {
     font-size: 10px;
+}
+
+.pricing {
+    display: flex;
+}
+
+ul{
+    list-style-type: none;
 }
 
