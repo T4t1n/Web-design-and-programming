@@ -2,18 +2,18 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: "Monserrat", sans-serif;
+    
 }
 
 body {
     background-color: #27264a;
-
+    font-family: "Monserrat", sans-serif;
 }
 
 .container {
-    max-width: 800px;
+    max-width: 880px;
     margin: 50px auto;
-    padding: 31px 0;
+    padding: 31px 31px;
     background-color: #fafcff;
     border-radius: 9px;
 }
@@ -24,19 +24,38 @@ body {
     flex-direction: column;    
     background-color: #ffffff;
     text-align: center;
-    padding: 15px;
+    padding: 10px;
     margin: 15px;
     width: 300px;
     color: #444063;
     border-radius: 10px;
     box-shadow: 0  0 10px 1px rgba(0, 0, 0, 0.1);
+    font-family: "Montserrat";
+    line-height: 1.6;
 }
 
 .title  {
-    background-color: aquamarine;
     padding: 10px 0;
     font-size: 25px;
+}
 
+.card-one .title {
+    background-color: #e9eff7;
+    color: black;
+    font-size: larger;
+
+}
+
+.card-two .title{
+    background:  linear-gradient(90deg,rgba(196, 255, 252, 1) 0%,rgba(180, 137, 252, 1) 100%);
+     color: #ffffff;
+    font-size: larger;
+}
+
+.card-three .title {
+ background: linear-gradient(90deg,rgba(164, 255, 104, 1) 0%,rgba(253, 255, 112, 1) 100%);
+ color: #ffffff;
+ font-size: large;  
 }
 
 .price {
@@ -55,8 +74,8 @@ body {
     font-weight: bolder;
 }
 .main-text {
-    font-size: 13px;
-    font-weight: bold;
+    font-size: 11px;
+    font-weight:600;
 
 }
 
@@ -64,8 +83,26 @@ body {
     margin: 35px 0;
     text-decoration: none;
     color: #444063;
-    font-size:20px;
-    font-weight:bolder ;
+    font-size:smaller;
+    font-weight:bold;
+    border: 1px solid #27264a;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.btn:hover {
+    background-color: #27264a;
+    color: #ffffff;
+}
+
+.card-two .btn {
+    background-color: #27264a;
+    color: #ffffff;
+}
+
+.card-two .btn:hover {
+    background-color: #fafcff;
+    color: #27264a;
 }
 
 .pricing {
@@ -76,7 +113,18 @@ body {
 ul{
     list-style-type: none;
     text-align: left;
-    
+}
 
+ul li {
+    color: #444063;
+    margin-bottom: 10px;
+    font-size:small;
+    font-weight: bold;
+    
+}
+
+ul li i {
+    color: lightgreen;
+    margin-left: 5px;
 }
 
