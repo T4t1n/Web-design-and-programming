@@ -5,16 +5,15 @@
     padding: 0;
 }
 
-
 /*----- BODY -----*/
 body {
-    font-family: 'Poppins';
+    font-family: 'Open Sans';
     line-height: 1.6;
     background: linear-gradient( rgba(195, 36, 47, 0.9) 0%, rgba(58, 13, 95, 0.8) 100%), url(/images/background.jpg);
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 /*----- HEADER -----*/
@@ -23,8 +22,6 @@ header {
     justify-content:space-between;
     align-items: center;
     padding: 20px;
-    
-    
 }
 
 header img {
@@ -37,8 +34,6 @@ header ul {
     list-style-type:none;
     justify-content: space-between;
     gap: 20px;
-    
-
 }
 
 header ul li a {
@@ -54,7 +49,7 @@ header ul li a {
 
 main {
     max-width: 1100px;
-    margin: 100px auto;
+    margin: 50px auto;
     display: flex;
     justify-content: space-around;
     padding: 0 100px;
@@ -63,8 +58,7 @@ main {
 /*----- FORM - ARTICLE -----*/
 main form, main article {
     width: 100%;
-}
-    
+} 
 
 /*----- FORM -----*/
 
@@ -85,22 +79,24 @@ form input, form textarea, form button{
     border-radius: 5px;
     height: 35px;
     margin: 10px 0;
+    padding: 10px;
     
 }
 
 form textarea {
     height: 85px;
+    resize: none;
 }
 
 form button {
     background-color: rgba(255, 55, 35, 1);
     border-radius: 15px;
     color: rgba(255, 255, 255, 1);
+    cursor: pointer;
 }
 
 form button:hover {
     background-color: rgba(255, 65, 70, 1);
-
 }
 
 /*----- ARTICLE -----*/
@@ -115,7 +111,6 @@ article h1 {
     line-height: 1.1;
     margin-bottom: 10px;
     font-size: 45px;
-    
 }
 
 article p {
@@ -166,8 +161,18 @@ article p {
         font-size: 12px;
     }
 
-
     form textarea {
     height: 55px;
     }
+}
+
+@media (max-height: 500px ) {
+    main {
+    margin: 0 auto;
+    padding: 0px 25px;
+  }
+
+  main article h1 {
+    font-size: 40px;
+  }
 }
