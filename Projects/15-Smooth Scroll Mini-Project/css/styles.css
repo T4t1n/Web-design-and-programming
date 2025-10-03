@@ -2,8 +2,74 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary-color: linear-gradient(90deg, rgba(242, 0, 12, 1) 0%, rgba(14,0,242,1) 100%); 
+    --secondary-color: rgba(255, 255, 255, 1);
 }
 
 body {
     font-family: "Poppins";
 }
+
+/* ###################### NAVABAR ###################### */
+nav {
+    background: var(--primary-color);
+    height: 49px;
+    color: rgba(255, 255, 255, 1);
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 360px;
+    height: 100%;
+    width: 100%;
+    list-style-type: none;
+}
+
+nav ul li a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: large;
+}
+
+/* ###################### MAIN ###################### */
+main {
+    max-width: 1366px;
+    margin: 80px auto;
+    padding: 0 325px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.title {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 40px;
+    padding: 2px;
+    margin: 15px 0;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 105px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+section {
+    margin-top: 40px;
+}
+
+
+
