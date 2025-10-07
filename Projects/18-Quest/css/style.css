@@ -40,6 +40,7 @@ img {
     padding: 5px 200px;
     align-items: center;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+    position: sticky;
 }
 
 
@@ -123,6 +124,10 @@ img {
     .navbar {
         flex-direction: column;
         padding: 10px 0px;
+        top: 0;
+        position:sticky;
+        background-color: var(--secondary-color);
+        
     }
 
     .navbar ul {
