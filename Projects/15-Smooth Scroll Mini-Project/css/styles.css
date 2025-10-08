@@ -8,6 +8,7 @@
 :root {
     --primary-color: linear-gradient(90deg, rgba(242, 0, 12, 1) 0%, rgba(14,0,242,1) 100%); 
     --secondary-color: rgba(255, 255, 255, 1);
+    --nav-transparencry: 0.9;
 }
 
 body {
@@ -25,7 +26,8 @@ nav {
 }
 
 .transparent {
-    background: linear-gradient(90deg, rgba(242, 0, 12, 0.8) 0%, rgba(14,0,242,0.8) 100%);
+    background: linear-gradient(90deg, rgba(242, 0, 12, var(--nav-transparencry)) 0%, rgba(14,0,242, var(--nav-transparencry)) 100%);
+    height: 500px;
 } 
 
 nav ul {
@@ -78,5 +80,23 @@ section {
     margin-top: 40px;
 }
 
+/* #################### Mobile device ####################*/
 
+@media (max-width: 1100px) {
+    nav {
+        max-width: 100%;
+        height: 300px;
+    }
+
+    nav ul {
+        padding: 0;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    main {
+        padding: 0 1rem;
+        
+    }
+}
 
