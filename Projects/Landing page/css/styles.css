@@ -1,0 +1,116 @@
+/*###################### RESET ######################*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --primary-color: rgba(30, 112, 55, 1);
+    --second-color: rgba(32, 186, 78, 1);
+    --terciary-color: rgba(255,255,255,1);
+}
+
+body {
+    font-family: 'Poppins';
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    color: var(--terciary-color);
+    padding: 10px 10rem;
+    font-size: 1rem;
+    position: sticky;
+    top:0;
+}
+.header .logo {
+    color: var(--terciary-color);
+    font-weight: 600;
+
+}
+
+.header span {
+    margin-left: 0.5rem;
+}
+.header .menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.header .menu a {
+    color: var(--terciary-color);
+}
+
+.menu .withcolor {
+    background-color: var(--second-color);
+    padding: 5px 1rem;
+    border-radius: 7px;
+}
+
+.sectionMain {
+    min-height: 93.3vh;
+    /* background: url("/images/mountains.jpg") no-repeat center/cover;
+    text-align: center;
+    filter: blur(5px);*/
+    position: relative; 
+    text-align: center;
+}
+
+.sectionMain::before {
+    content: ""; /* Required for pseudo-elements to render */
+        background-image: url('/images/mountains.jpg');
+        background-size: cover; /* Or other background-size properties */
+        background-position: center center;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1; /* Place it behind the content */
+        filter: brightness(30%);
+
+}
+
+ article {
+    padding: 225px 0;
+    color: var(--terciary-color);
+}
+
+article div {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+article .button {
+    width: 15%;
+    margin-top: 15px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    color: var(--terciary-color);
+}
+
+article .button-1 {
+    background-color: var(--second-color);
+}
+
+article .button-2 {
+    border: 1px solid var(--terciary-color);
+    filter: brightness(100%);
+}
