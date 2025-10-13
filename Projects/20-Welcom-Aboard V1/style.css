@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary-color: #e36874;
+    --secondary-color: #FFF;
+}
+
+body {
+    font-family: 'Poppins';
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.header {
+    display: flex; /* I can omit the margin collapsing */
+    height: 100vh;
+    background-color: var(--primary-color);
+    justify-content: center;
+    align-items: center;
+}
+
+.content_header {
+    max-width: 1100px;
+    text-align: center;
+}
+
+.content_header h1 {
+    font-weight: 900;
+}
+
+
+.container_main {
+    display: flex;
+    max-width: 1100px;
+    margin: 50px auto;
+}
+
+.article {
+    box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.5);
+    margin: 20px 10px;
+    padding: 10px;
+}
