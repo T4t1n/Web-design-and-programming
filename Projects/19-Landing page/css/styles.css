@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 
@@ -26,20 +27,26 @@ a {
     text-decoration: none;
 }
 
+img {
+    max-width: 100%;
+}
+
+/* ############### NAVBAR ###############*/
 .header {
+    max-width: 1366px;
     display: flex;
     justify-content: space-between;
     background-color: var(--primary-color);
     color: var(--terciary-color);
-    padding: 10px 10rem;
+    padding: 10px 5rem;
     font-size: 1rem;
     position: sticky;
     top:0;
+    z-index: 1000;
 }
 .header .logo {
     color: var(--terciary-color);
     font-weight: 600;
-
 }
 
 .header span {
@@ -62,55 +69,228 @@ a {
     border-radius: 7px;
 }
 
+.container {
+    max-width: 1366px;  
+}
+
+/* ############### SECTION MAIN ############### */
 .sectionMain {
-    min-height: 93.3vh;
-    /* background: url("/images/mountains.jpg") no-repeat center/cover;
-    text-align: center;
-    filter: blur(5px);*/
-    position: relative; 
-    text-align: center;
-}
-
-.sectionMain::before {
-    content: ""; /* Required for pseudo-elements to render */
-        background-image: url('/images/mountains.jpg');
-        background-size: cover; /* Or other background-size properties */
-        background-position: center center;
-        background-repeat: no-repeat;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        z-index: -1; /* Place it behind the content */
-        filter: brightness(30%);
-
-}
-
- article {
-    padding: 225px 0;
-    color: var(--terciary-color);
-}
-
-article div {
     display: flex;
     justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("/images/mountains.jpg") no-repeat center/cover;
+    text-align: center;
+    
+}
+
+ .sectionMain article {
+    color: var(--terciary-color);
+    padding: 2rem;
+    backdrop-filter: brightness(40%);
+    border-radius: 15px;
+    margin: 0 20px;
+}
+
+.sectionMain article div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 3rem;
 }
 
-article .button {
-    width: 15%;
-    margin-top: 15px;
+.sectionMain article .button {
+    width: 10rem;
+    margin-top: 30px;
     padding: 10px 15px;
     border-radius: 10px;
     color: var(--terciary-color);
 }
 
-article .button-1 {
+.sectionMain article .button-1 {
     background-color: var(--second-color);
 }
 
-article .button-2 {
+.sectionMain article .button-2 {
     border: 1px solid var(--terciary-color);
     filter: brightness(100%);
+}
+
+/* ########## SECTION ABOUT ########## */
+
+.section {
+    max-width: 100%;
+    margin: 0px auto;
+    padding: 10px 200px;
+
+}
+
+.sectionAbout {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #FFF;
+}
+
+.sectionAbout h2 {
+    align-self: center;
+}
+
+.sectionAbout .aboutArticle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    h3 {
+        color: rgb(54, 117, 91);
+    }
+
+    p {
+        font-size: small;
+        margin: 10px 0;
+    }
+}
+
+.sectionAbout .aboutArticle .imgAbout {
+    width: 360px;
+    filter: brightness(120%);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, .7);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.sectionAbout .aboutArticle .text_icon_about {
+    display: flex;
+    gap: 10rem
+}
+
+.aboutArticle .text_icon_about p i {
+    color: rgb(54, 117, 91);
+    margin-right: 5px;
+
+}
+
+
+
+/* ########## SECTION TOURS ########## */
+.sectionTours {
+    background-color: rgb(246, 245, 250);
+    max-width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+
+.articleTours {
+    text-align: center;
+
+    a {
+        display: inline-block;
+        margin-top: 100px;
+    }
+} 
+
+.paquetes_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+.paquetes_container .img {
+    width: 305px;
+    height: 130px;
+    border-top: 20px;
+}
+
+.paquetes_container .img-1 {
+    background: url('/images/imagen-3.jpg') no-repeat center/cover;
+}
+
+.paquetes_container .img-2 {
+    background: url('/images/imagen-4.jpg') no-repeat center/cover;
+}
+
+.paquetes_container .img-3 {
+    background: url('/images/imagen-5.jpg') no-repeat center/cover;
+}
+
+.card {
+    background: #FFF;
+    border-radius: 10px;
+}
+.card p {
+    font-size: 0.9rem;
+}
+
+/* ############### Mobile Device ############### */
+@Media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 20px 1px;
+
+        .logo {
+            font-size: 25px;
+        }
+    }
+
+    .header .menu ul {
+        gap: 1rem;
+        justify-content: space-between;
+        font-size: 10px;
+    }
+
+    .sectionMain {
+        min-height: 50vh;
+        max-width: 100%;
+        padding: 0 30px;
+    }
+
+    .sectionMain article {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+
+    }
+
+    .sectionMain article h1 {
+        font-size: 20px;
+    }
+
+    .sectionMain article p {
+        font-size: 10px;
+    }
+
+    .sectionMain article .button {
+        font-size: 10px;
+        font-weight: 900;   
+        margin-top: 30px;
+        padding: 10px 15px;
+        border-radius: 10px;
+        color: var(--terciary-color);
+    }
+
+    .sectionAbout {
+        padding: 10px 20px;
+
+        h2 {
+            font-size: 17px;
+            text-align: center;
+        }
+    }
+
+    .sectionAbout .aboutArticle {
+        flex-direction: column;
+    }
+    
+    .sectionAbout .aboutArticle .text_icon_about {
+        
+        gap: 2rem
+    }
 }
