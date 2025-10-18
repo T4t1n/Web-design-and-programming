@@ -311,9 +311,7 @@ img {
     }
 }
 
-.articleTours .buttonTours {
-    
-}
+
 /* ############### Mobile Device ############### */
 @Media (max-width: 768px) {
     .header {
@@ -380,5 +378,18 @@ img {
     .sectionAbout .aboutArticle .text_icon_about {
         
         gap: 2rem
+    }
+
+    .sectionTours {
+        padding: 10px 20px;
+    }
+
+
+    .paquetes_container {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
     }
 }
