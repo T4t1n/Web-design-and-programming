@@ -311,6 +311,54 @@ img {
     }
 }
 
+.sectionTestimonies {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.card_testimony {
+    padding: 20px 20px;
+}
+.imgPerfil {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.imgPerfil1{
+    background: url('/images/perfil1.jpg') no-repeat center/cover;
+}
+
+.imgPerfil2 {
+    background: url('/images/perfil3.jpg') no-repeat center/cover;
+}
+
+.imgPerfil3 {
+    background: url('/images/perfil2.jpg') no-repeat center/cover;
+}
+
+.imgPerfil_and_scoreStar{
+    display: flex;
+    gap: 1rem;
+}
+
+.name {
+    font-weight: 600;
+}
+.fa {
+    color: yellow;
+}
+
+.card_testimony i {
+    font-size: 12px;
+    color: #000;
+}
+
+.articleTestimonies h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
 
 /* ############### Mobile Device ############### */
 @Media (max-width: 768px) {
