@@ -360,6 +360,12 @@ img {
 }
 
 
+/* ################### CONTACT FORM ################### */
+.sectionContact {
+    background-color: var(--primary-color);
+}
+
+
 /* ############### Mobile Device ############### */
 @Media (max-width: 768px) {
     .header {
