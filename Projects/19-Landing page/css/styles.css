@@ -363,7 +363,32 @@ img {
 /* ################### CONTACT FORM ################### */
 .sectionContact {
     background-color: var(--primary-color);
+
+    h2 {
+        color: var(--terciary-color);
+        text-align: center;
+    }
+
+    p {
+        color: rgba(255, 255, 255, .8);
+        text-align: center;
+        font-size: 12px;
+    }
+    
+    form {
+        margin: 20px 0;
+        padding: 0 200px;
+    }
 }
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+}
+
 
 
 /* ############### Mobile Device ############### */
