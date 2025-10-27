@@ -445,6 +445,33 @@ select option {
     font-weight: 600;
 }
 
+/* ############### fAQ CONTAINER ############### */
+.sectionFaq {
+    background-color: rgb(246, 245, 250);
+    display: flex;
+}
+.faq-container {
+    max-width: 1366px;
+    margin: 50px auto;
+    padding: 20px;
+    color: #333;
+    background-color: #FFF;
+}
+
+.faq-container h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #3333;
+}
+
+.faq-item {
+    border-bottom:  1px solid #ddd;
+    overflow: hidden;
+}
+
+
+
+
 /* ############### Mobile Device ############### */
 @Media (max-width: 768px) {
     .header {
