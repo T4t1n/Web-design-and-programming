@@ -312,8 +312,9 @@ img {
 }
 
 .sectionTestimonies {
-    margin-top: 50px;
+    
     margin-bottom: 50px;
+
 }
 
 .card_testimony {
@@ -355,6 +356,7 @@ img {
 }
 
 .articleTestimonies h2 {
+    margin-top: 50px;
     text-align: center;
     margin-bottom: 50px;
 }
@@ -421,7 +423,7 @@ select option {
 }
 
 
-::placeholder {
+.sectionContact ::placeholder {
     color: #FFF;
     opacity: 0.5;
 }
@@ -449,32 +451,38 @@ select option {
 .sectionFaq {
     background-color: rgb(246, 245, 250);
     display: flex;
+    padding: 0 300px;
 }
 .faq-container {
     max-width: 1366px;
     margin: 50px auto;
     padding: 20px;
     color: #333;
-    background-color: #FFF;
 }
 
 .faq-container h2 {
     text-align: center;
     margin-bottom: 40px;
-    color: #3333;
+    color: #000;
 }
 
 .faq-item {
+    background-color: var(--terciary-color);
     border-bottom:  1px solid #ddd;
     overflow: hidden;
+    margin-bottom: 12px;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, .4);
+    border-radius: 10px;
 }
 
 .faq-question {
-    background-color: #ecf0f1;
+    background-color: var(--terciary-color);
     width: 100%;
     padding: 20px;
     text-align: left;
-    font-size: 18px;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: bold;
     border: none;
     cursor: pointer;
     position: relative;
@@ -508,6 +516,53 @@ select option {
     line-height: 1.5;
     color: #555;
 }
+
+/* ############### SECTION JOIN COMMUNITY ############### */
+
+.sectionOurCommunity {
+    background-color: var(--primary-color);
+    padding: 0 300px;
+    text-align: center;
+    color: var(--terciary-color);
+    display: flex;
+}
+
+.articleOurCommunity {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    p {
+        font-size: 15px;
+    }
+
+    form {
+        margin-top: 15px;
+    }
+}
+
+
+
+.articleOurCommunity form input, .articleOurCommunity button{
+    padding: 11px 10px;
+     border:none;
+     border-radius: 5px 0px 0px 5px;
+}
+
+.articleOurCommunity button {
+    position: relative;
+    left: -4px;
+    background-color: var(--second-color);
+    color: var(--terciary-color);
+    border-radius: 0px 5px 5px 0px;
+}
+
+
+
+
+
+
 
 
 
