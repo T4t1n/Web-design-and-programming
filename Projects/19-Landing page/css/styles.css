@@ -522,6 +522,7 @@ select option {
 .sectionOurCommunity {
     background-color: var(--primary-color);
     padding: 0 300px;
+    padding-bottom: 10px;
     text-align: center;
     color: var(--terciary-color);
     display: flex;
@@ -558,8 +559,69 @@ select option {
     border-radius: 0px 5px 5px 0px;
 }
 
+/* #################### FOOTER #################### */
+footer {
+    max-width: 1366px;
+    background-color: rgba(18, 22, 38, 1);
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    padding: 30px 100px;
+    h3 {
+        font-size: 15px;
+        color: var(--terciary-color);
+    }
 
+    p, a {
+        font-size: 10px;
+        color: rgb(167, 167, 167);
+    }
+}
 
+footer .sectionFooter1 {
+    display: flex;
+    margin-bottom: 25px;
+
+    .articleFooter {
+        width: calc(100% / 3);
+    }
+
+    .articleFooter1 {
+        display: flex;
+        gap: 10px;
+        
+        width: calc(90%);
+        .logo {
+            color: var(--terciary-color);
+            font-size: large;
+            font-weight: 600;
+        }
+
+        div {
+            width: calc(50%);
+        }
+    
+    }
+
+    .articleFooter2 {
+        a {
+            display: block;
+        }
+    }
+
+    
+}
+hr {
+    height: 1px;
+    background-color: #555;
+    border: none;
+}
+footer .sectionFooter2 {
+    display: flex;
+    margin-top: 10px;
+    padding-top: 10px;
+    justify-content: center;
+}
 
 
 
